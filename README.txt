@@ -1,22 +1,26 @@
-INSTALACIÓN RÁPIDA
+## INSTALACIÓN RÁPIDA
 
 1. Descomprime la carpeta.
 2. Abre Chrome.
-3. Entra en chrome://extensions/
-4. Activa Modo desarrollador.
-5. Pulsa "Cargar descomprimida".
-6. Selecciona la carpeta tts_mp3_extension.
+3. Entra en `chrome://extensions/`
+4. Activa **Modo desarrollador**.
+5. Pulsa **"Cargar descomprimida"**.
+6. Selecciona la carpeta `tts_mp3_extension`.
 
-USO
+---
+
+## USO
 
 - Abre la extensión.
 - Escribe un nombre opcional.
 - Pega el texto.
-- Pulsa "Generar MP3".
-- El archivo se descargará en Descargas/tts-mp3/.
+- Pulsa **"Generar MP3"**.
+- El archivo se descargará en `Descargas/tts-mp3/`.
 - El historial queda guardado dentro de la extensión.
 
-NOTAS
+---
+
+## NOTAS
 
 - Para textos largos, la extensión divide el contenido en bloques.
 - El MP3 final es un prototipo educativo construido uniendo fragmentos MP3.
