@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Texto a MP3</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <div class="hero">
+      <div>
+        <h1>Texto a MP3</h1>
+        <p>Convierte texto largo en un MP3 y guarda un listado de lo que vayas generando.</p>
+      </div>
+      <div class="badge">Demo</div>
+    </div>
+
+    <div class="panel">
+      <label for="titleInput">Nombre del audio</label>
+      <input id="titleInput" type="text" placeholder="ejemplo-clase-1">
+
+      <div class="row">
+        <div class="field">
+          <label for="langSelect">Idioma</label>
+          <select id="langSelect">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="de">Alemán</option>
+            <option value="it">Italiano</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="speedSelect">Velocidad</label>
+          <select id="speedSelect">
+            <option value="1">Normal</option>
+            <option value="0.24">Lenta</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="textInput">Texto</label>
+      <textarea id="textInput" placeholder="Pega aquí el texto completo..."></textarea>
+
+      <div class="meta">
+        <span id="charCount">0 caracteres</span>
+        <span id="chunkCount">0 bloques</span>
+      </div>
+
+      <div class="actions">
+        <button id="generateBtn" class="primary">Generar MP3</button>
+        <button id="clearBtn" class="ghost">Limpiar</button>
+      </div>
+
+      <div id="status" class="status">Listo.</div>
+      <div id="progressWrap" class="progress-wrap hidden">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <audio id="player" class="player hidden" controls></audio>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2>Historial</h2>
+        <button id="clearHistoryBtn" class="ghost small">Vaciar</button>
+      </div>
+      <div id="historyList" class="history empty">Todavía no has generado ningún MP3.</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

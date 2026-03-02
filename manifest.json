@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Texto a MP3 con Historial",
+  "version": "1.0.0",
+  "description": "Convierte texto en un MP3 descargable y guarda un historial de los audios generados.",
+  "permissions": ["downloads", "storage"],
+  "host_permissions": [
+    "https://translate.google.com/*",
+    "https://translate.googleapis.com/*"
+  ],
+  "action": {
+    "default_title": "Texto a MP3",
+    "default_popup": "popup.html"
+  }
+}
